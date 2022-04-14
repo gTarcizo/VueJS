@@ -1,18 +1,22 @@
-<script setup>
+<script>
 </script>
 
 <template>
 <main>
-  <h1>Teste Título</h1>
-  <button type="button" class="btn btn-dark">Dark</button>
-</main>
-
+  <div class="container mt-3">
+    <div class="grid">
+      <div class="row">
+        <div class="row">
+          <p class="h3 text-success fw-bold">App Componennt</p>
+          <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem repellat saepe in est eos eius quibusdam, amet, quidem tempora aperiam mollitia labore molestias nobis laboriosam accusantium excepturi non porro odio.</p>
+        </div>
+      </div>
+    </div>
+    <Customer/>  <!-- Carregar o componente -->
+  </div>
+  </main>
 </template>
 
 <style>
  @import url(./assets/base.css);
-
-h1{
-  color: blue;
-}
 </style>
