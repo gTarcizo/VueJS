@@ -1,5 +1,3 @@
-<script>
-</script>
 
 <template>
 <main>
@@ -12,10 +10,15 @@
         </div>
       </div>
     </div>
+    
     <Customer/>  <!-- Carregar o componente -->
+
   </div>
   </main>
 </template>
+
+<script>
+</script>
 
 <style>
  @import url(./assets/base.css);
