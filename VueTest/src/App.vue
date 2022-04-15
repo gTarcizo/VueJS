@@ -12,6 +12,8 @@
     </div>
 
     <Counter/>
+    <br>
+    <Greeting/>
 
     </div>
   </main>
@@ -19,10 +21,11 @@
 
 <script>
 import Counter from './components/Counter.vue'
+import Greeting from './components/Greeting.vue'
 
   export default {
     components: {
-      Counter
+      Counter , Greeting
     }
   }
 </script>

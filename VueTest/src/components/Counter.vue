@@ -1,6 +1,6 @@
 <!-- Todo componente tem que estar com a Letra maiúscula -->
 <template>
-    <div class="container">
+    <div class="container shadow-lg">
         <div class="row">
             <div class="col-mds-4">
                 <div class="card">
