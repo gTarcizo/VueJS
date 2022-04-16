@@ -11,17 +11,16 @@
       </div>
     </div>
     
-    <Customer name="Tarcizo" age="22" designation="Software Engineer" />  <!-- Carregar o componente -->
-    <Employee/>
+    <Register/>
+
   </div>
   </main>
 </template>
 
 <script>
-import Customer from './components/Customer.vue'
-import Employee from './components/Employee.vue'
+import Register from './components/Register.vue'
   export default {
-    components: { Customer , Employee }
+    components: { Register  }
 }
 </script>
 
