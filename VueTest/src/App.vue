@@ -11,16 +11,16 @@
       </div>
     </div>
     
-    <Register/>
+    <AuthUser/>
 
   </div>
   </main>
 </template>
 
 <script>
-import Register from './components/Register.vue'
+import AuthUser from './components/AuthUser.vue'
   export default {
-    components: { Register  }
+    components: { AuthUser  }
 }
 </script>
 
