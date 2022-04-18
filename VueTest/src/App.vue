@@ -1,4 +1,3 @@
-
 <template>
 <main>
   <nav class="navbar navbar-dark bg-success navbar-expand-sm">
@@ -30,7 +29,6 @@
 <script>
 import UserList from './components/UserList.vue'
 import Spinner from './components/Spinner.vue'
-
   export default {
     components: { UserList , Spinner}
 }
