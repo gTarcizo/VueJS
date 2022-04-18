@@ -11,16 +11,16 @@
       </div>
     </div>
     
-    <AuthUser/>
+    <UserList/>
 
   </div>
   </main>
 </template>
 
 <script>
-import AuthUser from './components/AuthUser.vue'
+import UserList from './components/UserList.vue'
   export default {
-    components: { AuthUser  }
+    components: { UserList }
 }
 </script>
 
