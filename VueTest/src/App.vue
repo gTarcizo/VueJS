@@ -1,19 +1,30 @@
 
 <template>
 <main>
-  <div class="container mt-3">
-    <div class="grid">
-      <div class="row">
-        <div class="row">
-          <p class="h3 text-success fw-bold">App Component</p>
-          <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem repellat saepe in est eos eius quibusdam, amet, quidem tempora aperiam mollitia labore molestias nobis laboriosam accusantium excepturi non porro odio.</p>
-        </div>
+  <nav class="navbar navbar-dark bg-success navbar-expand-sm">
+    <div class="container">
+      <router-link to="/" class="navbar-brand">Vue Router</router-link>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <router-link to="/" class="nav-link px-4">Home</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/user" class="nav-link px-4">User</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/about" class="nav-link px-4">About</router-link>
+          </li>
+        </ul>
       </div>
-    </div>
-  <UserList/>
 
-  </div>
-  </main>
+    </div>
+  </nav>
+  
+  
+  <router-view>
+  </router-view>
+</main>
 </template>
 
 <script>
