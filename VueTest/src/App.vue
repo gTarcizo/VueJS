@@ -10,8 +10,7 @@
         </div>
       </div>
     </div>
-    
-    <UserList/>
+  <UserList/>
 
   </div>
   </main>
@@ -19,8 +18,10 @@
 
 <script>
 import UserList from './components/UserList.vue'
+import Spinner from './components/Spinner.vue'
+
   export default {
-    components: { UserList }
+    components: { UserList , Spinner}
 }
 </script>
 

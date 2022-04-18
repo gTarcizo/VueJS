@@ -5,7 +5,12 @@
                 <p class="h3 fw-bold text-success"> User List</p>
                 <p class="fst-italic"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit labore minima omnis eos natus laboriosam incidunt temporibus, tempora minus alias!</p>
             </div>
-            <div class="row">
+
+            <div v-if="loading">
+                    <Spinner/>
+            </div>
+
+            <div class="row" v-if="!loading">
                 <div class="col m-3">
                     <table class="table table-hover text-center table-striped">
                         <thead class="bg-warning text-white">
@@ -36,13 +41,14 @@
 </template>
 
 <script>
-// import myjson from '../../myjson.json'
+// import myjson from '../../myjson.json' = um JSON
 import { UserService } from "../services/UserService"
+
 export default {
     name: 'UserList',
     data(){
         return{
-            user : UserService.getAllUsers()
+            user : UserService.getAllUsers(),
         }
     }
 }
