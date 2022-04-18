@@ -36,12 +36,13 @@
 </template>
 
 <script>
-import myjson from '../../myjson.json'
+// import myjson from '../../myjson.json'
+import { UserService } from "../services/UserService"
 export default {
     name: 'UserList',
     data(){
         return{
-            user : myjson
+            user : UserService.getAllUsers()
         }
     }
 }
